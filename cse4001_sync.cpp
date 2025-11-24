@@ -242,7 +242,6 @@ void dining2() { // run dining solution 2
     for (;;) sleep(1);
 }
 
-// main entry point
 int main(int argc, char* argv[]) {
     if (argc != 2) {
         return 1;
@@ -256,7 +255,7 @@ int main(int argc, char* argv[]) {
         case 3: dining1(); break;
         case 4: dining2(); break;
         default:
-            cout << "Invalid argument (must be 1-4)\n";
+            cout << "Invalid problem number. Use 1-4." << endl;
             return 1;
     }
     return 0;
